@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+    
+}
+body{
+    background-image: url(images/vecteezy_dice-on-red-background_2398378.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.dice{
+    text-align:center;
+    display:inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+h1{
+    margin: 30px;
+    text-shadow: 5px 0 white;
+    font-size: 6rem;
+    color:#f6b93b;
+
+}
+p{
+    font-size: 2rem;
+    color:#9177e2;
+    text-shadow: 1px 1px white;
+}
+button{
+    padding:15px;
+    border:none;
+    background-color: green;
+    color: white;
+}

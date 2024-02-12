@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JS DICE</h1>
+        <p id="result"></p>
+        <div class="dice">
+            <p>Player1</p>
+            <img src="images/dice1.png" width="190px"  height ="190px" id="check1">
+        </div>
+        <div class="dice">
+            <p>Player2</p>
+            <img src="images/dice1.png" width="190px"  height ="190px"  id="check2">
+        </div>
+        <div>
+        <button onclick="start()">click me</button>
+        </div>
+    </div>
+    <script>
+      start=()=>{
+        const Play1=Math.floor(Math.random()*6)+1;
+        const playdice1=`images/dice${Play1}.png`;
+         const Play2 = Math.floor(Math.random() * 6) + 1;
+            const playdice2 = `images/dice${Play2}.png`;
+            document.getElementById('check1').setAttribute('src',playdice1);
+              document.getElementById('check2').setAttribute('src', playdice2);
+              if(Play1>Play2){
+                document.querySelector('h1').innerHTML="Player 1 won :)";
+              }
+              else if(Play1<Play2) {
+                      document.querySelector('h1').innerHTML = "Player 2 won :)";
+                  }
+                  else{
+                    document.querySelector('h1').innerHTML = "Draw !";
+                  }
+    }
+    
+
+    </script>
+    
+</body>
+</html>
